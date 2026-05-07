@@ -15,7 +15,6 @@ class RankingCard extends StatelessWidget {
       ),
       child: Row(
         children: [
-
           Container(
             width: 70,
             height: 70,
@@ -28,8 +27,10 @@ class RankingCard extends StatelessWidget {
           const SizedBox(width: 14),
 
           Expanded(
-            child: Text(title,
-                style: const TextStyle(fontWeight: FontWeight.bold)),
+            child: Text(
+              title,
+              style: const TextStyle(fontWeight: FontWeight.bold),
+            ),
           ),
         ],
       ),

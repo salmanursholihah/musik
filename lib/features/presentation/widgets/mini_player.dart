@@ -12,13 +12,10 @@ class MiniPlayer extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(22),
-        boxShadow: const [
-          BoxShadow(color: Colors.black12, blurRadius: 15),
-        ],
+        boxShadow: const [BoxShadow(color: Colors.black12, blurRadius: 15)],
       ),
       child: Row(
         children: [
-
           Container(
             width: 46,
             height: 46,
@@ -35,16 +32,16 @@ class MiniPlayer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Internet Girl", style: TextStyle(fontWeight: FontWeight.bold)),
+                Text(
+                  "Internet Girl",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
                 Text("KATSEYE", style: TextStyle(fontSize: 12)),
               ],
             ),
           ),
 
-          IconButton(
-            icon: const Icon(Icons.play_arrow),
-            onPressed: () {},
-          )
+          IconButton(icon: const Icon(Icons.play_arrow), onPressed: () {}),
         ],
       ),
     );

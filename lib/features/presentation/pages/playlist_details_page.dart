@@ -9,7 +9,6 @@ class PlaylistDetailPage extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-
           /// HEADER
           Container(
             height: 260,
@@ -22,7 +21,6 @@ class PlaylistDetailPage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-
                 Container(
                   width: 140,
                   height: 140,
@@ -57,7 +55,7 @@ class PlaylistDetailPage extends StatelessWidget {
               itemCount: 15,
               itemBuilder: (_, i) => const SongTile(),
             ),
-          )
+          ),
         ],
       ),
     );

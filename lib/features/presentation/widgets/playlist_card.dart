@@ -19,7 +19,6 @@ class PlaylistCard extends StatelessWidget {
         margin: const EdgeInsets.only(right: 14),
         child: Column(
           children: [
-
             Expanded(
               child: Container(
                 decoration: BoxDecoration(
