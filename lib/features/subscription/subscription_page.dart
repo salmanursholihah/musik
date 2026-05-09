@@ -16,7 +16,7 @@ class _SubscriptionPageState extends State<SubscriptionPage>
   late Animation<double> _fadeAnim;
 
   final List<Map<String, dynamic>> _plans = [
-    {
+    {  
       'id': 0,
       'duration': '1 Bulan',
       'price': 'Rp 29.900',
