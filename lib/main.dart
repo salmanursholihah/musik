@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:musik/features/presentation/pages/main_page.dart';
+import 'package:flutter/services.dart';
+import 'app.dart';
 
 void main() {
-  runApp(const MusicApp());
-}
+  WidgetsFlutterBinding.ensureInitialized();
 
-class MusicApp extends StatelessWidget {
-  const MusicApp({super.key});
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: "Music UI",
-      theme: ThemeData(
-        useMaterial3: true,
-        colorSchemeSeed: Colors.deepPurple,
-        scaffoldBackgroundColor: const Color(0xffF6F7FB),
-      ),
-      home: const MainPage(),
-    );
-  }
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarIconBrightness: Brightness.light,
+      statusBarBrightness: Brightness.dark,
+      systemNavigationBarColor: Color(0xFF0D1117),
+      systemNavigationBarIconBrightness: Brightness.light,
+    ),
+  );
+
+  runApp(const MyApp());
 }
