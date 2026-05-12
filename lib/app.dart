@@ -31,7 +31,6 @@ class MyApp extends StatelessWidget {
         AppRoutes.payment: (_) => const PaymentPage(),
         AppRoutes.paymentSuccess: (_) => const PaymentSuccessPage(),
         AppRoutes.paymentFailed: (_) => const PaymentFailedPage(),
-        AppRoutes.player: (_) => const PlayerPage(),
         AppRoutes.offline: (_) => const OfflinePage(), // ← TAMBAH INI
       },
     );

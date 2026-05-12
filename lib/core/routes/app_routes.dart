@@ -10,5 +10,5 @@ class AppRoutes {
   static const String paymentSuccess = '/payment-success';
   static const String paymentFailed = '/payment-failed';
   static const String player = '/player';
-  static const String offline = '/offline'; // ← TAMBAH INI
+  static const String offline = '/offline';
 }
